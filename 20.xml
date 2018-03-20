@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance>
+  <presentation name="Celar" format="XCSP 2.1_FRODO" maxConstraintArity="2" maximize="false" />
+  <agents nbAgents="20">
+    <agent name="a1" />
+    <agent name="a2" />
+    <agent name="a3" />
+    <agent name="a4" />
+    <agent name="a5" />
+    <agent name="a6" />
+    <agent name="a7" />
+    <agent name="a8" />
+    <agent name="a9" />
+    <agent name="a10" />
+    <agent name="a11" />
+    <agent name="a12" />
+    <agent name="a13" />
+    <agent name="a14" />
+    <agent name="a15" />
+    <agent name="a16" />
+    <agent name="a17" />
+    <agent name="a18" />
+    <agent name="a19" />
+    <agent name="a20" />
+  </agents>
+  <domains nbDomains="7">
+    <domain name="1" nbValues="44">16  30  44  58  72  86 100 114 128 142 156 254 268 282 296 310 324 338 352 366 380 394 414 428 442 456 470 484 498 512 526 540 554 652 666 680 694 708 722 736 750 764 778 792</domain>
+    <domain name="2" nbValues="22">30  58  86 114 142 268 296 324 352 380 414 442 470 498 526 554 652 680 708 736 764 792</domain>
+    <domain name="3" nbValues="36">30  44  58  72  86 100 114 128 142 268 282 296 310 324 338 352 366 380 428 442 456 470 484 498 512 526 540 666 680 694 708 722 736 750 764 778</domain>
+    <domain name="4" nbValues="24">16  30  58  86 114 142 254 268 296 324 352 380 414 442 470 498 526 554 652 680 708 736 764 792</domain>
+    <domain name="5" nbValues="6">142 170 240 380 408 478</domain>
+    <domain name="6" nbValues="42">30  44  58  72  86 100 114 128 142 156 268 282 296 310 324 338 352 366 380 394 414 428 442 456 470 484 498 512 526 540 554 652 666 680 694 708 722 736 750 764 778 792</domain>
+    <domain name="7" nbValues="22">16  30  44  58  72  86 100 114 128 142 156 254 268 282 296 310 324 338 352 366 380 394</domain>
+  </domains>
+  <variables nbVariables="20">
+    <variable name="X1" domain="1" agent="a1" />
+    <variable name="X2" domain="1" agent="a2" />
+    <variable name="X3" domain="2" agent="a3" />
+    <variable name="X4" domain="2" agent="a4" />
+    <variable name="X5" domain="1" agent="a5" />
+    <variable name="X6" domain="1" agent="a6" />
+    <variable name="X7" domain="1" agent="a7" />
+    <variable name="X8" domain="1" agent="a8" />
+    <variable name="X9" domain="1" agent="a9" />
+    <variable name="X10" domain="1" agent="a10" />
+    <variable name="X11" domain="1" agent="a11" />
+    <variable name="X12" domain="1" agent="a12" />
+    <variable name="X13" domain="1" agent="a13" />
+    <variable name="X14" domain="1" agent="a14" />
+    <variable name="X15" domain="1" agent="a15" />
+    <variable name="X16" domain="1" agent="a16" />
+    <variable name="X17" domain="1" agent="a17" />
+    <variable name="X18" domain="1" agent="a18" />
+    <variable name="X19" domain="2" agent="a19" />
+    <variable name="X20" domain="2" agent="a20" />
+  </variables>
+  <constraints nbConstraints="22">
+    <constraint name="C1" scope="X1 X2" arity="2" reference="eq">
+      <parameters>X1 X2</parameters>
+    </constraint>
+    <constraint name="C2" scope="X3 X4" arity="2" reference="eq">
+      <parameters>X3 X4</parameters>
+    </constraint>
+    <constraint name="C3" scope="X3 X18" arity="2" reference="gt">
+      <parameters>X3 X18 19</parameters>
+    </constraint>
+    <constraint name="C4" scope="X3 X19" arity="2" reference="gt">
+      <parameters>X3 X19 2</parameters>
+    </constraint>
+    <constraint name="C5" scope="X3 X20" arity="2" reference="gt">
+      <parameters>X3 X20 55</parameters>
+    </constraint>
+    <constraint name="C6" scope="X4 X18" arity="2" reference="gt">
+      <parameters>X4 X18 21</parameters>
+    </constraint>
+    <constraint name="C7" scope="X4 X19" arity="2" reference="gt">
+      <parameters>X4 X19 55</parameters>
+    </constraint>
+    <constraint name="C8" scope="X4 X20" arity="2" reference="gt">
+      <parameters>X4 X20 2</parameters>
+    </constraint>
+    <constraint name="C9" scope="X5 X6" arity="2" reference="eq">
+      <parameters>X5 X6</parameters>
+    </constraint>
+    <constraint name="C10" scope="X7 X8" arity="2" reference="eq">
+      <parameters>X7 X8</parameters>
+    </constraint>
+    <constraint name="C11" scope="X7 X9" arity="2" reference="gt">
+      <parameters>X7 X9 59</parameters>
+    </constraint>
+    <constraint name="C12" scope="X7 X10" arity="2" reference="gt">
+      <parameters>X7 X10 84</parameters>
+    </constraint>
+    <constraint name="C13" scope="X8 X9" arity="2" reference="gt">
+      <parameters>X8 X9 84</parameters>
+    </constraint>
+    <constraint name="C14" scope="X8 X10" arity="2" reference="gt">
+      <parameters>X8 X10 59</parameters>
+    </constraint>
+    <constraint name="C15" scope="X9 X10" arity="2" reference="eq">
+      <parameters>X9 X10</parameters>
+    </constraint>
+    <constraint name="C16" scope="X11 X12" arity="2" reference="eq">
+      <parameters>X11 X12</parameters>
+    </constraint>
+    <constraint name="C17" scope="X13 X14" arity="2" reference="eq">
+      <parameters>X13 X14</parameters>
+    </constraint>
+    <constraint name="C18" scope="X13 X16" arity="2" reference="gt">
+      <parameters>X13 X16 84</parameters>
+    </constraint>
+    <constraint name="C19" scope="X14 X15" arity="2" reference="gt">
+      <parameters>X14 X15 84</parameters>
+    </constraint>
+    <constraint name="C20" scope="X15 X16" arity="2" reference="eq">
+      <parameters>X15 X16</parameters>
+    </constraint>
+    <constraint name="C21" scope="X17 X18" arity="2" reference="eq">
+      <parameters>X17 X18</parameters>
+    </constraint>
+    <constraint name="C22" scope="X19 X20" arity="2" reference="eq">
+      <parameters>X19 X20</parameters>
+    </constraint>
+  </constraints>
+</instance>

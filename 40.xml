@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<instance>
+  <presentation name="Celar" format="XCSP 2.1_FRODO" maxConstraintArity="2" maximize="false" />
+  <agents nbAgents="40">
+    <agent name="a1" />
+    <agent name="a2" />
+    <agent name="a3" />
+    <agent name="a4" />
+    <agent name="a5" />
+    <agent name="a6" />
+    <agent name="a7" />
+    <agent name="a8" />
+    <agent name="a9" />
+    <agent name="a10" />
+    <agent name="a11" />
+    <agent name="a12" />
+    <agent name="a13" />
+    <agent name="a14" />
+    <agent name="a15" />
+    <agent name="a16" />
+    <agent name="a17" />
+    <agent name="a18" />
+    <agent name="a19" />
+    <agent name="a20" />
+    <agent name="a21" />
+    <agent name="a22" />
+    <agent name="a23" />
+    <agent name="a24" />
+    <agent name="a25" />
+    <agent name="a26" />
+    <agent name="a27" />
+    <agent name="a28" />
+    <agent name="a29" />
+    <agent name="a30" />
+    <agent name="a31" />
+    <agent name="a32" />
+    <agent name="a33" />
+    <agent name="a34" />
+    <agent name="a35" />
+    <agent name="a36" />
+    <agent name="a37" />
+    <agent name="a38" />
+    <agent name="a39" />
+    <agent name="a40" />
+  </agents>
+  <domains nbDomains="7">
+    <domain name="1" nbValues="44">16  30  44  58  72  86 100 114 128 142 156 254 268 282 296 310 324 338 352 366 380 394 414 428 442 456 470 484 498 512 526 540 554 652 666 680 694 708 722 736 750 764 778 792</domain>
+    <domain name="2" nbValues="22">30  58  86 114 142 268 296 324 352 380 414 442 470 498 526 554 652 680 708 736 764 792</domain>
+    <domain name="3" nbValues="36">30  44  58  72  86 100 114 128 142 268 282 296 310 324 338 352 366 380 428 442 456 470 484 498 512 526 540 666 680 694 708 722 736 750 764 778</domain>
+    <domain name="4" nbValues="24">16  30  58  86 114 142 254 268 296 324 352 380 414 442 470 498 526 554 652 680 708 736 764 792</domain>
+    <domain name="5" nbValues="6">142 170 240 380 408 478</domain>
+    <domain name="6" nbValues="42">30  44  58  72  86 100 114 128 142 156 268 282 296 310 324 338 352 366 380 394 414 428 442 456 470 484 498 512 526 540 554 652 666 680 694 708 722 736 750 764 778 792</domain>
+    <domain name="7" nbValues="22">16  30  44  58  72  86 100 114 128 142 156 254 268 282 296 310 324 338 352 366 380 394</domain>
+  </domains>
+  <variables nbVariables="40">
+    <variable name="X1" domain="1" agent="a1" />
+    <variable name="X2" domain="1" agent="a2" />
+    <variable name="X3" domain="2" agent="a3" />
+    <variable name="X4" domain="2" agent="a4" />
+    <variable name="X5" domain="1" agent="a5" />
+    <variable name="X6" domain="1" agent="a6" />
+    <variable name="X7" domain="1" agent="a7" />
+    <variable name="X8" domain="1" agent="a8" />
+    <variable name="X9" domain="1" agent="a9" />
+    <variable name="X10" domain="1" agent="a10" />
+    <variable name="X11" domain="1" agent="a11" />
+    <variable name="X12" domain="1" agent="a12" />
+    <variable name="X13" domain="1" agent="a13" />
+    <variable name="X14" domain="1" agent="a14" />
+    <variable name="X15" domain="1" agent="a15" />
+    <variable name="X16" domain="1" agent="a16" />
+    <variable name="X17" domain="1" agent="a17" />
+    <variable name="X18" domain="1" agent="a18" />
+    <variable name="X19" domain="2" agent="a19" />
+    <variable name="X20" domain="2" agent="a20" />
+    <variable name="X21" domain="3" agent="a21" />
+    <variable name="X22" domain="3" agent="a22" />
+    <variable name="X23" domain="3" agent="a23" />
+    <variable name="X24" domain="3" agent="a24" />
+    <variable name="X25" domain="1" agent="a25" />
+    <variable name="X26" domain="1" agent="a26" />
+    <variable name="X27" domain="1" agent="a27" />
+    <variable name="X28" domain="1" agent="a28" />
+    <variable name="X29" domain="2" agent="a29" />
+    <variable name="X30" domain="2" agent="a30" />
+    <variable name="X31" domain="2" agent="a31" />
+    <variable name="X32" domain="2" agent="a32" />
+    <variable name="X33" domain="2" agent="a33" />
+    <variable name="X34" domain="2" agent="a34" />
+    <variable name="X35" domain="2" agent="a35" />
+    <variable name="X36" domain="2" agent="a36" />
+    <variable name="X37" domain="2" agent="a37" />
+    <variable name="X38" domain="2" agent="a38" />
+    <variable name="X39" domain="2" agent="a39" />
+    <variable name="X40" domain="2" agent="a40" />
+  </variables>
+  <constraints nbConstraints="70">
+    <constraint name="C1" scope="X1 X2" arity="2" reference="eq">
+      <parameters>X1 X2</parameters>
+    </constraint>
+    <constraint name="C2" scope="X3 X4" arity="2" reference="eq">
+      <parameters>X3 X4</parameters>
+    </constraint>
+    <constraint name="C3" scope="X3 X18" arity="2" reference="gt">
+      <parameters>X3 X18 19</parameters>
+    </constraint>
+    <constraint name="C4" scope="X3 X19" arity="2" reference="gt">
+      <parameters>X3 X19 2</parameters>
+    </constraint>
+    <constraint name="C5" scope="X3 X20" arity="2" reference="gt">
+      <parameters>X3 X20 55</parameters>
+    </constraint>
+    <constraint name="C6" scope="X4 X18" arity="2" reference="gt">
+      <parameters>X4 X18 21</parameters>
+    </constraint>
+    <constraint name="C7" scope="X4 X19" arity="2" reference="gt">
+      <parameters>X4 X19 55</parameters>
+    </constraint>
+    <constraint name="C8" scope="X4 X20" arity="2" reference="gt">
+      <parameters>X4 X20 2</parameters>
+    </constraint>
+    <constraint name="C9" scope="X5 X6" arity="2" reference="eq">
+      <parameters>X5 X6</parameters>
+    </constraint>
+    <constraint name="C10" scope="X7 X8" arity="2" reference="eq">
+      <parameters>X7 X8</parameters>
+    </constraint>
+    <constraint name="C11" scope="X7 X9" arity="2" reference="gt">
+      <parameters>X7 X9 59</parameters>
+    </constraint>
+    <constraint name="C12" scope="X7 X10" arity="2" reference="gt">
+      <parameters>X7 X10 84</parameters>
+    </constraint>
+    <constraint name="C13" scope="X8 X9" arity="2" reference="gt">
+      <parameters>X8 X9 84</parameters>
+    </constraint>
+    <constraint name="C14" scope="X8 X10" arity="2" reference="gt">
+      <parameters>X8 X10 59</parameters>
+    </constraint>
+    <constraint name="C15" scope="X9 X10" arity="2" reference="eq">
+      <parameters>X9 X10</parameters>
+    </constraint>
+    <constraint name="C16" scope="X11 X12" arity="2" reference="eq">
+      <parameters>X11 X12</parameters>
+    </constraint>
+    <constraint name="C17" scope="X13 X14" arity="2" reference="eq">
+      <parameters>X13 X14</parameters>
+    </constraint>
+    <constraint name="C18" scope="X13 X16" arity="2" reference="gt">
+      <parameters>X13 X16 84</parameters>
+    </constraint>
+    <constraint name="C19" scope="X14 X15" arity="2" reference="gt">
+      <parameters>X14 X15 84</parameters>
+    </constraint>
+    <constraint name="C20" scope="X15 X16" arity="2" reference="eq">
+      <parameters>X15 X16</parameters>
+    </constraint>
+    <constraint name="C21" scope="X17 X18" arity="2" reference="eq">
+      <parameters>X17 X18</parameters>
+    </constraint>
+    <constraint name="C22" scope="X19 X20" arity="2" reference="eq">
+      <parameters>X19 X20</parameters>
+    </constraint>
+    <constraint name="C23" scope="X21 X22" arity="2" reference="eq">
+      <parameters>X21 X22</parameters>
+    </constraint>
+    <constraint name="C24" scope="X23 X24" arity="2" reference="eq">
+      <parameters>X23 X24</parameters>
+    </constraint>
+    <constraint name="C25" scope="X25 X26" arity="2" reference="eq">
+      <parameters>X25 X26</parameters>
+    </constraint>
+    <constraint name="C26" scope="X27 X28" arity="2" reference="eq">
+      <parameters>X27 X28</parameters>
+    </constraint>
+    <constraint name="C27" scope="X29 X30" arity="2" reference="eq">
+      <parameters>X29 X30</parameters>
+    </constraint>
+    <constraint name="C28" scope="X29 X31" arity="2" reference="gt">
+      <parameters>X29 X31 56</parameters>
+    </constraint>
+    <constraint name="C29" scope="X29 X32" arity="2" reference="gt">
+      <parameters>X29 X32 2</parameters>
+    </constraint>
+    <constraint name="C30" scope="X29 X33" arity="2" reference="gt">
+      <parameters>X29 X33 56</parameters>
+    </constraint>
+    <constraint name="C31" scope="X29 X34" arity="2" reference="gt">
+      <parameters>X29 X34 2</parameters>
+    </constraint>
+    <constraint name="C32" scope="X29 X35" arity="2" reference="gt">
+      <parameters>X29 X35 56</parameters>
+    </constraint>
+    <constraint name="C33" scope="X29 X36" arity="2" reference="gt">
+      <parameters>X29 X36 2</parameters>
+    </constraint>
+    <constraint name="C34" scope="X29 X37" arity="2" reference="gt">
+      <parameters>X29 X37 56</parameters>
+    </constraint>
+    <constraint name="C35" scope="X30 X31" arity="2" reference="gt">
+      <parameters>X30 X31 2</parameters>
+    </constraint>
+    <constraint name="C36" scope="X30 X32" arity="2" reference="gt">
+      <parameters>X30 X32 56</parameters>
+    </constraint>
+    <constraint name="C37" scope="X30 X33" arity="2" reference="gt">
+      <parameters>X30 X33 2</parameters>
+    </constraint>
+    <constraint name="C38" scope="X30 X34" arity="2" reference="gt">
+      <parameters>X30 X34 56</parameters>
+    </constraint>
+    <constraint name="C39" scope="X30 X35" arity="2" reference="gt">
+      <parameters>X30 X35 21</parameters>
+    </constraint>
+    <constraint name="C40" scope="X30 X36" arity="2" reference="gt">
+      <parameters>X30 X36 56</parameters>
+    </constraint>
+    <constraint name="C41" scope="X30 X37" arity="2" reference="gt">
+      <parameters>X30 X37 119</parameters>
+    </constraint>
+    <constraint name="C42" scope="X30 X38" arity="2" reference="gt">
+      <parameters>X30 X38 56</parameters>
+    </constraint>
+    <constraint name="C43" scope="X31 X32" arity="2" reference="eq">
+      <parameters>X31 X32</parameters>
+    </constraint>
+    <constraint name="C44" scope="X31 X37" arity="2" reference="gt">
+      <parameters>X31 X37 2</parameters>
+    </constraint>
+    <constraint name="C45" scope="X31 X38" arity="2" reference="gt">
+      <parameters>X31 X38 56</parameters>
+    </constraint>
+    <constraint name="C46" scope="X32 X37" arity="2" reference="gt">
+      <parameters>X32 X37 56</parameters>
+    </constraint>
+    <constraint name="C47" scope="X32 X38" arity="2" reference="gt">
+      <parameters>X32 X38 2</parameters>
+    </constraint>
+    <constraint name="C48" scope="X33 X34" arity="2" reference="eq">
+      <parameters>X33 X34</parameters>
+    </constraint>
+    <constraint name="C49" scope="X33 X35" arity="2" reference="gt">
+      <parameters>X33 X35 119</parameters>
+    </constraint>
+    <constraint name="C50" scope="X33 X36" arity="2" reference="gt">
+      <parameters>X33 X36 56</parameters>
+    </constraint>
+    <constraint name="C51" scope="X33 X37" arity="2" reference="gt">
+      <parameters>X33 X37 21</parameters>
+    </constraint>
+    <constraint name="C52" scope="X33 X38" arity="2" reference="gt">
+      <parameters>X33 X38 56</parameters>
+    </constraint>
+    <constraint name="C53" scope="X33 X39" arity="2" reference="gt">
+      <parameters>X33 X39 56</parameters>
+    </constraint>
+    <constraint name="C54" scope="X33 X40" arity="2" reference="gt">
+      <parameters>X33 X40 2</parameters>
+    </constraint>
+    <constraint name="C55" scope="X34 X35" arity="2" reference="gt">
+      <parameters>X34 X35 56</parameters>
+    </constraint>
+    <constraint name="C56" scope="X34 X36" arity="2" reference="gt">
+      <parameters>X34 X36 119</parameters>
+    </constraint>
+    <constraint name="C57" scope="X34 X37" arity="2" reference="gt">
+      <parameters>X34 X37 56</parameters>
+    </constraint>
+    <constraint name="C58" scope="X34 X38" arity="2" reference="gt">
+      <parameters>X34 X38 2</parameters>
+    </constraint>
+    <constraint name="C59" scope="X34 X39" arity="2" reference="gt">
+      <parameters>X34 X39 22</parameters>
+    </constraint>
+    <constraint name="C60" scope="X34 X40" arity="2" reference="gt">
+      <parameters>X34 X40 56</parameters>
+    </constraint>
+    <constraint name="C61" scope="X35 X36" arity="2" reference="eq">
+      <parameters>X35 X36</parameters>
+    </constraint>
+    <constraint name="C62" scope="X35 X37" arity="2" reference="gt">
+      <parameters>X35 X37 2</parameters>
+    </constraint>
+    <constraint name="C63" scope="X35 X38" arity="2" reference="gt">
+      <parameters>X35 X38 56</parameters>
+    </constraint>
+    <constraint name="C64" scope="X35 X39" arity="2" reference="gt">
+      <parameters>X35 X39 56</parameters>
+    </constraint>
+    <constraint name="C65" scope="X35 X40" arity="2" reference="gt">
+      <parameters>X35 X40 2</parameters>
+    </constraint>
+    <constraint name="C66" scope="X36 X37" arity="2" reference="gt">
+      <parameters>X36 X37 56</parameters>
+    </constraint>
+    <constraint name="C67" scope="X36 X38" arity="2" reference="gt">
+      <parameters>X36 X38 2</parameters>
+    </constraint>
+    <constraint name="C68" scope="X36 X39" arity="2" reference="gt">
+      <parameters>X36 X39 2</parameters>
+    </constraint>
+    <constraint name="C69" scope="X36 X40" arity="2" reference="gt">
+      <parameters>X36 X40 56</parameters>
+    </constraint>
+    <constraint name="C70" scope="X37 X38" arity="2" reference="eq">
+      <parameters>X37 X38</parameters>
+    </constraint>
+  </constraints>
+</instance>
